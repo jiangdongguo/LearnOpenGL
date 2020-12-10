@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include "src/lesson01/CreateWindow.hpp"
+#include "src/lesson02/DrawShape.hpp"
 
 
 int main();

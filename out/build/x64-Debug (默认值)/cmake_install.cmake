@@ -1,8 +1,8 @@
-# Install script for directory: D:/Developer/VSProject/LearnOpenGL
+# Install script for directory: E:/VSProject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "D:/Developer/VSProject/LearnOpenGL/out/install/x64-Debug (默认值)")
+  set(CMAKE_INSTALL_PREFIX "E:/VSProject/out/install/x64-Debug (默认值)")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson01/cmake_install.cmake")
+  include("E:/VSProject/out/build/x64-Debug (默认值)/src/common/cmake_install.cmake")
+  include("E:/VSProject/out/build/x64-Debug (默认值)/src/lesson01/cmake_install.cmake")
+  include("E:/VSProject/out/build/x64-Debug (默认值)/src/lesson02/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/VSProject/out/build/x64-Debug (默认值)/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

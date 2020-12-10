@@ -17,7 +17,8 @@ public:
 
 	bool isWindowShouldClose();
 	void checkCancelWindowEvent();
-	void clearWindowAndSwapBuffers();
+	void clearWindow();
+	void swapBuffers();
 
 private: 
 	const unsigned int WINDWO_WIDTH = 800;

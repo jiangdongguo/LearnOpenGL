@@ -30,7 +30,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 20,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
@@ -42,7 +42,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 26,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
@@ -72,11 +72,11 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glad/include"
+					"path" : "E:/VSProject/3rdPart/glad/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glfw/include"
+					"path" : "E:/VSProject/3rdPart/glfw/include"
 				}
 			],
 			"language" : "CXX",
@@ -96,11 +96,11 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glad/include"
+					"path" : "E:/VSProject/3rdPart/glad/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glfw/include"
+					"path" : "E:/VSProject/3rdPart/glfw/include"
 				}
 			],
 			"language" : "C",
@@ -114,7 +114,15 @@
 	[
 		{
 			"backtrace" : 3,
+			"id" : "common::@af79f3804eddddbfa7f1"
+		},
+		{
+			"backtrace" : 3,
 			"id" : "Lsn01::@5a5c941d34fca390e744"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Lsn02::@a2771794487e010ccca1"
 		}
 	],
 	"id" : "LearnOpenGL::@6890427a1f51a3e7e1df",
@@ -132,7 +140,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LIBPATH:D:\\Developer\\VSProject\\LearnOpenGL\\3rdPart\\glfw\\lib",
+				"fragment" : "-LIBPATH:E:\\VSProject\\3rdPart\\glfw\\lib",
 				"role" : "libraryPath"
 			},
 			{
@@ -142,7 +150,17 @@
 			},
 			{
 				"backtrace" : 3,
+				"fragment" : "src\\common\\common.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
 				"fragment" : "src\\lesson01\\Lsn01.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "src\\lesson02\\Lsn02.lib",
 				"role" : "libraries"
 			},
 			{

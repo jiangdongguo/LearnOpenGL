@@ -1,4 +1,4 @@
-# Install script for directory: E:/VSProject/src/lesson01
+# Install script for directory: E:/VSProject/src/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

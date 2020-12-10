@@ -14,7 +14,9 @@ set(GLFW_LINK ${PROJECT_SOURCE_DIR}/3rdPart/glfw/lib)
 link_directories(${GLFW_LINK})
 
 # 添加子目录
+add_subdirectory(src/common)
 add_subdirectory(src/lesson01)
+add_subdirectory(src/lesson02)
 
 # 编译源码生成目标
 add_executable (LearnOpenGL         # 要生成的可执行文件
@@ -25,7 +27,9 @@ add_executable (LearnOpenGL         # 要生成的可执行文件
 # 将第三方库链接到可执行文件
 target_link_libraries(LearnOpenGL 
 						glfw3  # 链接第三方库
-						Lsn01  # 链接自定义库
+						common # 导入自定义库
+						Lsn01  
+						Lsn02  
 						)
 
 

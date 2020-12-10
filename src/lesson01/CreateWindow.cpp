@@ -49,18 +49,22 @@ void CreateWindow::checkCancelWindowEvent()
 	processInput(window);
 }
 
-void CreateWindow::clearWindowAndSwapBuffers()
+void CreateWindow::clearWindow()
 {
 	// 6. 清空窗口，便于下一次渲染
-	glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(0.3f, 0.6f, 0.4f, 0.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
-	// 交换缓存
+}
+
+void CreateWindow::swapBuffers()
+{
+	// 7. 交换缓存
 	glfwSwapBuffers(window);
 	glfwPollEvents();
 }
 
 CreateWindow::~CreateWindow() {
-	// 7. 结束渲染，释放GLFW资源
+	// 8. 结束渲染，释放GLFW资源
 	glfwTerminate();
 }
 
