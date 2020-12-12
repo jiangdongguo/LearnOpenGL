@@ -15,7 +15,7 @@ enum ShaderType
 class MyShader
 {
 public:
-	MyShader(const char* shaderStr, ShaderType type);
+	MyShader(const char* shaderStr, int type);
 	~MyShader();
 
 	GLuint getShaderId();
@@ -28,11 +28,10 @@ private:
 class MyProgram
 {
 public:
-	MyProgram();
 	MyProgram(GLuint vertexShaderId, GLuint fragmentShaderId);
 	~MyProgram();
 
-	GLuint getShaderProgramId();
+	int UseProgram();
 
 private:
 	GLuint mShaderProgramId = 0;

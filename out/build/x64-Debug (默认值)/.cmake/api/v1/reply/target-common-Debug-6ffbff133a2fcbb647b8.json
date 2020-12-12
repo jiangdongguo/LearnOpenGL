@@ -69,11 +69,11 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "E:/VSProject/3rdPart/glad/include"
+					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/VSProject/3rdPart/glfw/include"
+					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
 				}
 			],
 			"language" : "CXX",

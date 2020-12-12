@@ -32,7 +32,7 @@ DrawShape::DrawShape()
 	MyShader fragmentShader(mFragmentShaderStr, ShaderType::TYPE_FRAGMENT_SHADER);
 
 	// 2. 创建程序对象
-    mProgram = MyProgram(vertexShader.getShaderId(), fragmentShader.getShaderId());
+	mProgram = new MyProgram(vertexShader.getShaderId(), fragmentShader.getShaderId());
 	
 	// 3. 创建顶点缓冲对象(VBO)和顶点数组对象(VAO)，并链接顶点属性
 	// (1) 分别创建VAO、VBO对象
@@ -56,7 +56,7 @@ DrawShape::DrawShape()
 void DrawShape::drawTriangle()
 {	
 	// 4. 使用程序
-	glUseProgram(mProgram.getShaderProgramId());
+	mProgram->UseProgram();
 	// 5. 绑定VAO
 	glBindVertexArray(mVAO);
 	// 6. 绘制

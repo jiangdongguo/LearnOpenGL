@@ -71,7 +71,7 @@ build LearnOpenGL.exe: CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug CMakeFiles\Learn
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = glfw3.lib  src\common\common.lib  src\lesson01\Lsn01.lib  src\lesson02\Lsn02.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  LINK_PATH = -LIBPATH:E:\VSProject\3rdPart\glfw\lib
+  LINK_PATH = -LIBPATH:E:\VSProject\LearnOpenGL\3rdPart\glfw\lib
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -85,7 +85,7 @@ build LearnOpenGL.exe: CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug CMakeFiles\Learn
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -96,7 +96,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject -B"E:\VSProject\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -105,7 +105,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/VSProject/CMakeLists.txt
+# E:/VSProject/LearnOpenGL/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -156,7 +156,7 @@ build src\common\common.lib: CXX_STATIC_LIBRARY_LINKER__common_Debug src\common\
 # Utility command for edit_cache
 
 build src\common\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)\src\common" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\common" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -167,7 +167,7 @@ build src\common\edit_cache: phony src\common\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build src\common\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)\src\common" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject -B"E:\VSProject\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\common" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -176,7 +176,7 @@ build src\common\rebuild_cache: phony src\common\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/VSProject/CMakeLists.txt
+# E:/VSProject/LearnOpenGL/CMakeLists.txt
 # =============================================================================
 
 
@@ -184,7 +184,7 @@ build src\common\rebuild_cache: phony src\common\CMakeFiles\rebuild_cache.util
 # Utility command for rebuild_cache
 
 build src\lesson01\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)\src\lesson01" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject -B"E:\VSProject\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson01" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -231,7 +231,7 @@ build src\lesson01\Lsn01.lib: CXX_STATIC_LIBRARY_LINKER__Lsn01_Debug src\lesson0
 # Utility command for edit_cache
 
 build src\lesson01\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)\src\lesson01" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson01" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -239,7 +239,7 @@ build src\lesson01\edit_cache: phony src\lesson01\CMakeFiles\edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/VSProject/CMakeLists.txt
+# E:/VSProject/LearnOpenGL/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -282,7 +282,7 @@ build src\lesson02\Lsn02.lib: CXX_STATIC_LIBRARY_LINKER__Lsn02_Debug src\lesson0
 # Utility command for edit_cache
 
 build src\lesson02\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)\src\lesson02" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson02" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -293,7 +293,7 @@ build src\lesson02\edit_cache: phony src\lesson02\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build src\lesson02\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\out\build\x64-Debug (默认值)\src\lesson02" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject -B"E:\VSProject\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson02" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -323,28 +323,28 @@ build common.lib: phony src\common\common.lib
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/out/build/x64-Debug (默认值)
+# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)
 
 build all: phony LearnOpenGL.exe src\common\all src\lesson01\all src\lesson02\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/out/build/x64-Debug (默认值)/src/common
+# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/common
 
 build src\common\all: phony src\common\common.lib
 
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/out/build/x64-Debug (默认值)/src/lesson01
+# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson01
 
 build src\lesson01\all: phony src\lesson01\Lsn01.lib
 
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/out/build/x64-Debug (默认值)/src/lesson02
+# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson02
 
 build src\lesson02\all: phony src\lesson02\Lsn02.lib
 

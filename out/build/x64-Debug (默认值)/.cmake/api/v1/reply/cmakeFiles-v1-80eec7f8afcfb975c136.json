@@ -133,8 +133,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "E:/VSProject/out/build/x64-Debug (默认值)",
-		"source" : "E:/VSProject"
+		"build" : "E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)",
+		"source" : "E:/VSProject/LearnOpenGL"
 	},
 	"version" : 
 	{

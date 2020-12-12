@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/VSProject/out/build/x64-Debug (默认值)"
+			"value" : "e:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/VSProject"
+			"value" : "E:/VSProject/LearnOpenGL"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -523,7 +523,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/VSProject/out/install/x64-Debug (默认值)"
+			"value" : "E:/VSProject/LearnOpenGL/out/install/x64-Debug (默认值)"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1047,7 +1047,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/VSProject/out/build/x64-Debug (默认值)"
+			"value" : "E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)"
 		},
 		{
 			"name" : "LearnOpenGL_SOURCE_DIR",
@@ -1059,7 +1059,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/VSProject"
+			"value" : "E:/VSProject/LearnOpenGL"
 		}
 	],
 	"kind" : "cache",

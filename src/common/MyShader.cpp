@@ -1,6 +1,6 @@
 #include "Common.hpp"
 
-MyShader::MyShader(const char* shaderStr, ShaderType type)
+MyShader::MyShader(const char* shaderStr, int type)
 {	
 	int success;
 	char infoLog[512];
@@ -8,7 +8,10 @@ MyShader::MyShader(const char* shaderStr, ShaderType type)
 	// 1. 根据类型创建一个Shader对象，并返回其唯一ID
 	// GL_VERTEX_SHADER  顶点着色器
 	// GL_FRAGMENT_SHADER 片段着色器
-	if (type == ShaderType::TYPE_FRAGMENT_SHADER) {
+	if (type == 1) {
+		mShaderId = glCreateShader(GL_VERTEX_SHADER);
+	}
+	else if (type = 2){
 		mShaderId = glCreateShader(GL_FRAGMENT_SHADER);
 	}
 	else {
@@ -33,8 +36,9 @@ MyShader::MyShader(const char* shaderStr, ShaderType type)
 MyShader::~MyShader() 
 {
 	// 4. 释放着色器资源
-	if (mShaderId != NULL) {
+	if (mShaderId != 0) {
 		glDeleteShader(mShaderId);
+		mShaderId = 0;
 	}
 }
 

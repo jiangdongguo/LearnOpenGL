@@ -1,9 +1,5 @@
 #include "Common.hpp"
 
-MyProgram::MyProgram()
-{
-}
-
 MyProgram::MyProgram(GLuint vertexShaderId, GLuint fragmentShaderId) {
 	int success;
 	char infoLog[512];
@@ -34,11 +30,13 @@ MyProgram::MyProgram(GLuint vertexShaderId, GLuint fragmentShaderId) {
 MyProgram::~MyProgram() {
 	if (mShaderProgramId != NULL) {
 		glDeleteProgram(mShaderProgramId);
+		mShaderProgramId = 0;
 	}
 }
 
-GLuint MyProgram::getShaderProgramId()
+int MyProgram::UseProgram()
 {
-	return mShaderProgramId;
+	glUseProgram(mShaderProgramId);
+	return 0;
 }
 

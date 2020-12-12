@@ -18,6 +18,6 @@ public:
 	void drawSquare();
 
 private:
-	 MyProgram mProgram;
-	unsigned int mVBO, mVAO;
+	MyProgram* mProgram = NULL;
+	unsigned int mVBO = 0, mVAO = 0;
 };
