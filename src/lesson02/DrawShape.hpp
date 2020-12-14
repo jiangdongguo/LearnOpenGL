@@ -19,5 +19,5 @@ public:
 
 private:
 	MyProgram* mProgram = NULL;
-	unsigned int mVBO = 0, mVAO = 0;
+	MyVAO* mVAO = NULL;
 };

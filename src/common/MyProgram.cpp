@@ -28,15 +28,28 @@ MyProgram::MyProgram(GLuint vertexShaderId, GLuint fragmentShaderId) {
 }
 
 MyProgram::~MyProgram() {
+	// 5. 释放资源
 	if (mShaderProgramId != NULL) {
 		glDeleteProgram(mShaderProgramId);
-		mShaderProgramId = 0;
+		mShaderProgramId = NULL;
 	}
 }
 
 int MyProgram::UseProgram()
 {
+	// 4. 使用着色器程序
 	glUseProgram(mShaderProgramId);
+	return 0;
+}
+
+int MyProgram::drawArrays(GLenum mode, GLint first, GLsizei count)
+{
+	glDrawArrays(mode, first, count);
+	return 0;
+}
+
+int MyProgram::drawElement()
+{
 	return 0;
 }
 
