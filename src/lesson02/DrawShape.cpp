@@ -19,10 +19,23 @@ const char* mFragmentShaderStr = "#version 330 core\n"
 "}\n\0";
 
 // 顶点数据
-const float mVertices[] = {
-	-0.5f, -0.5f, 0.0f,		// left
-	0.5f, -0.5f, 0.0f,		// right
-	0.0f, 0.5f, 0.0f		// top
+float mVertices1[] = {
+   -0.5f, -0.5f, 0.0f,		// left
+   0.5f, -0.5f, 0.0f,		// right
+   0.0f, 0.5f, 0.0f		// top
+};
+// 顶点数组
+float mVertices2[] = {
+	0.5f, 0.5f, 0.0f,   // 右上角
+	0.5f, -0.5f, 0.0f,  // 右下角
+	-0.5f, -0.5f, 0.0f, // 左下角
+	-0.5f, 0.5f, 0.0f   // 左上角
+};
+
+// 索引数组
+unsigned int indices[] = { // 注意索引从0开始! 
+	0, 1, 3, // 第一个三角形
+	1, 2, 3  // 第二个三角形
 };
 
 DrawShape::DrawShape() 
@@ -33,11 +46,13 @@ DrawShape::DrawShape()
 
 	// 2. 创建程序对象
 	mProgram = new MyProgram(vertexShader.getShaderId(), fragmentShader.getShaderId());
-	
-	// 3. 创建顶点缓冲对象(VBO)和顶点数组对象(VAO)
-	// 并链接顶点属性
+	// 3. 创建VBO、VAO、EBO
+	// 并链接顶点属性，此处绘制正方形
 	mVAO = new MyVAO();
-	mVAO->addVertext3D(mVertices, 3, 0);
+	mVAO->addVertext3D(mVertices2,sizeof(mVertices2), 0, indices, sizeof(indices));
+	// 注意：如果调用的是drawTriangle,即绘制三角形
+	// 这里应该这么调用
+	// mVAO->addVertext3D(mVertices1,sizeof(mVertices1), 0, NULL, 0);
 }
 
 void DrawShape::drawTriangle()
@@ -52,6 +67,12 @@ void DrawShape::drawTriangle()
 
 void DrawShape::drawSquare()
 {
+	// 4. 使用程序
+	mProgram->UseProgram();
+	// 5. 绑定EBO
+	mVAO->BindVAO();
+	// 6. 绘制正方形
+	mProgram->drawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
 
 DrawShape::~DrawShape()

@@ -6,19 +6,27 @@ MyVAO::MyVAO()
 	glGenVertexArrays(1, &mVAOId);
 }
 
-int MyVAO::addVertext3D(const float* data, int vertexCount, int layout)
+int MyVAO::addVertext3D(float data[], int dataSize, int layout, unsigned int indices[], int indicesSize)
 {
 	// 2. 创建VBO，拷贝数据到GPU显存，再配置顶点属性
 	// (1) 分别创建VAO对象
-	GLuint vboId = 0;
+	GLuint vboId = NULL;
+	GLuint mEBOId = NULL;
 	glGenBuffers(1, &vboId);
+	glGenBuffers(1, &mEBOId);
 	// (2) 绑定VAO对象
 	glBindVertexArray(mVAOId);
 	// (3) 将新创建的缓冲绑定到顶点缓冲类型GL_ARRAY_BUFFER上
 	glBindBuffer(GL_ARRAY_BUFFER, vboId);
 	// (4) 将顶点数据复制到缓冲的显存供OpenGL使用
 	// 并指定显卡管理数据模式为GL_STATIC_DRAW，即数据不会或几乎不会改变
-	glBufferData(GL_ARRAY_BUFFER, vertexCount * 3 * sizeof(data), data, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, dataSize, data, GL_STATIC_DRAW);
+
+	if (indices != NULL) {
+		mEBO = new MyEBO();
+		mEBO->addIndexData(indices, indicesSize);
+	}
+
 	// (5) 链接顶点属性
 	glVertexAttribPointer(layout, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(layout);
@@ -39,6 +47,10 @@ int MyVAO::BindVAO()
 
 MyVAO::~MyVAO()
 {
+	if (mEBO != NULL) {
+		delete mEBO;
+	}
+
 	// 4. 释放资源
 	// (1) 释放VBO资源
 	for (int i = 0; i < mVBOIdList.size(); i++) {

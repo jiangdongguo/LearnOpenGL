@@ -117,6 +117,14 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build cmake_object_order_depends_target_common: phony || src\common\CMakeFiles\common.dir
 
+build src\common\CMakeFiles\common.dir\MyEBO.cpp.obj: CXX_COMPILER__common_Debug ..\..\..\src\common\MyEBO.cpp || cmake_object_order_depends_target_common
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  OBJECT_DIR = src\common\CMakeFiles\common.dir
+  OBJECT_FILE_DIR = src\common\CMakeFiles\common.dir
+  TARGET_COMPILE_PDB = src\common\CMakeFiles\common.dir\common.pdb
+  TARGET_PDB = src\common\common.pdb
+
 build src\common\CMakeFiles\common.dir\MyProgram.cpp.obj: CXX_COMPILER__common_Debug ..\..\..\src\common\MyProgram.cpp || cmake_object_order_depends_target_common
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
@@ -149,7 +157,7 @@ build src\common\CMakeFiles\common.dir\MyVAO.cpp.obj: CXX_COMPILER__common_Debug
 #############################################
 # Link the static library src\common\common.lib
 
-build src\common\common.lib: CXX_STATIC_LIBRARY_LINKER__common_Debug src\common\CMakeFiles\common.dir\MyProgram.cpp.obj src\common\CMakeFiles\common.dir\MyShader.cpp.obj src\common\CMakeFiles\common.dir\MyVAO.cpp.obj
+build src\common\common.lib: CXX_STATIC_LIBRARY_LINKER__common_Debug src\common\CMakeFiles\common.dir\MyEBO.cpp.obj src\common\CMakeFiles\common.dir\MyProgram.cpp.obj src\common\CMakeFiles\common.dir\MyShader.cpp.obj src\common\CMakeFiles\common.dir\MyVAO.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = src\common\CMakeFiles\common.dir

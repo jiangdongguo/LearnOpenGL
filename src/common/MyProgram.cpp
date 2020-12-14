@@ -48,8 +48,9 @@ int MyProgram::drawArrays(GLenum mode, GLint first, GLsizei count)
 	return 0;
 }
 
-int MyProgram::drawElement()
+int MyProgram::drawElements(GLenum mode, GLsizei count, GLenum type, const void* indices)
 {
+	glDrawElements(mode, count, type, indices);
 	return 0;
 }
 

@@ -92,7 +92,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "LearnOpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LearnOpenGL-Debug-cd36d81dcb4cdbc16339.json",
+					"jsonFile" : "target-LearnOpenGL-Debug-f03faee8bf9f7e2a829a.json",
 					"name" : "LearnOpenGL",
 					"projectIndex" : 0
 				},
@@ -113,7 +113,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "common::@af79f3804eddddbfa7f1",
-					"jsonFile" : "target-common-Debug-c678f2621b619f491257.json",
+					"jsonFile" : "target-common-Debug-63e0296272d27f133c8c.json",
 					"name" : "common",
 					"projectIndex" : 0
 				}

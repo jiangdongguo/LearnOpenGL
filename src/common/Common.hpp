@@ -32,10 +32,22 @@ public:
 
 	int UseProgram();
 	int drawArrays(GLenum mode, GLint first, GLsizei count);
-	int drawElement();
+	int drawElements(GLenum mode, GLsizei count, GLenum type, const void* indices);
 
 private:
 	GLuint mShaderProgramId = NULL;
+};
+
+class MyEBO
+{
+public:
+	MyEBO();
+	~MyEBO();
+
+	int addIndexData(unsigned int indices[], int indicesSize);
+
+private:
+	GLuint mEBOId = NULL;
 };
 
 
@@ -47,14 +59,13 @@ public:
 	 
 	// 添加坐标数据
 	// data 3D坐标数据
-	// vertexCount 
-	// layout
-	int addVertext3D(const float* data, int vertexCount, int layout);
+	int addVertext3D(float data[], int dataSize, int layout, unsigned int indices[], int indicesSize);
 
 	// 绑定VAO
 	int BindVAO();
 
 private:
+	MyEBO* mEBO = NULL;
 	GLuint mVAOId = NULL;
 	std::vector<GLuint> mVBOIdList;
 };

@@ -15,7 +15,9 @@ int main()
 		mCreateWindow->clearWindow();
 
 		// 绘制三角形
-		mLsn02->drawTriangle();
+	    // mLsn02->drawTriangle();
+		// 绘制正方形
+	     mLsn02->drawSquare();
 
 		mCreateWindow->swapBuffers();
 	}
