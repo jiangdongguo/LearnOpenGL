@@ -53,6 +53,12 @@
 				"file" : 1,
 				"line" : 10,
 				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 2
 			}
 		]
 	},
@@ -74,6 +80,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/VSProject/LearnOpenGL/3rdPart/image"
 				}
 			],
 			"language" : "CXX",

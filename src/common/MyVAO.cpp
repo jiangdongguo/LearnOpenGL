@@ -6,7 +6,7 @@ MyVAO::MyVAO()
 	glGenVertexArrays(1, &mVAOId);
 }
 
-int MyVAO::addVertext3D(float data[], int dataSize, int layout, unsigned int indices[], int indicesSize)
+int MyVAO::addVertext3D(float data[], int dataSize, unsigned int indices[], int indicesSize)
 {
 	// 2. 创建VBO，拷贝数据到GPU显存，再配置顶点属性
 	// (1) 分别创建VAO对象
@@ -27,21 +27,28 @@ int MyVAO::addVertext3D(float data[], int dataSize, int layout, unsigned int ind
 		mEBO->addIndexData(indices, indicesSize);
 	}
 
-	// (5) 链接顶点属性
-	glVertexAttribPointer(layout, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-	glEnableVertexAttribArray(layout);
-	// (6) 解绑VAO, VBO
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
-	glBindVertexArray(0);
-
 	mVBOIdList.push_back(vboId);
 	return 0;
 }
 
-int MyVAO::BindVAO()
+void MyVAO::setVertexAttribPointer(GLuint layout, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void* pointer)
 {
-	// 3. 绑定VAO
+	// (5) 链接顶点属性
+	glVertexAttribPointer(layout, size, type, normalized, stride, pointer);
+	glEnableVertexAttribArray(layout);
+}
+
+int MyVAO::bindVAO()
+{
 	glBindVertexArray(mVAOId);
+	return 0;
+}
+
+int MyVAO::unBindVAO()
+{
+	// (6) 解绑VAO, VBO
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
 	return 0;
 }
 

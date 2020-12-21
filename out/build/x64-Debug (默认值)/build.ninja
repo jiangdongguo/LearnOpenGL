@@ -41,11 +41,11 @@ include CMakeFiles\rules.ninja
 #############################################
 # Order-only phony target for LearnOpenGL
 
-build cmake_object_order_depends_target_LearnOpenGL: phony || cmake_object_order_depends_target_Lsn01 cmake_object_order_depends_target_Lsn02 cmake_object_order_depends_target_common
+build cmake_object_order_depends_target_LearnOpenGL: phony || cmake_object_order_depends_target_Lsn01 cmake_object_order_depends_target_Lsn02 cmake_object_order_depends_target_Lsn03 cmake_object_order_depends_target_common
 
 build CMakeFiles\LearnOpenGL.dir\LearnOpenGL.cpp.obj: CXX_COMPILER__LearnOpenGL_Debug ..\..\..\LearnOpenGL.cpp || cmake_object_order_depends_target_LearnOpenGL
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir
   TARGET_COMPILE_PDB = CMakeFiles\LearnOpenGL.dir\
@@ -53,7 +53,7 @@ build CMakeFiles\LearnOpenGL.dir\LearnOpenGL.cpp.obj: CXX_COMPILER__LearnOpenGL_
 
 build CMakeFiles\LearnOpenGL.dir\3rdPart\glad\src\glad.c.obj: C_COMPILER__LearnOpenGL_Debug ..\..\..\3rdPart\glad\src\glad.c || cmake_object_order_depends_target_LearnOpenGL
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\3rdPart\glad\src
   TARGET_COMPILE_PDB = CMakeFiles\LearnOpenGL.dir\
@@ -67,10 +67,10 @@ build CMakeFiles\LearnOpenGL.dir\3rdPart\glad\src\glad.c.obj: C_COMPILER__LearnO
 #############################################
 # Link the executable LearnOpenGL.exe
 
-build LearnOpenGL.exe: CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug CMakeFiles\LearnOpenGL.dir\LearnOpenGL.cpp.obj CMakeFiles\LearnOpenGL.dir\3rdPart\glad\src\glad.c.obj | src\common\common.lib src\lesson01\Lsn01.lib src\lesson02\Lsn02.lib || src\common\common.lib src\lesson01\Lsn01.lib src\lesson02\Lsn02.lib
+build LearnOpenGL.exe: CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug CMakeFiles\LearnOpenGL.dir\LearnOpenGL.cpp.obj CMakeFiles\LearnOpenGL.dir\3rdPart\glad\src\glad.c.obj | src\common\common.lib src\lesson01\Lsn01.lib src\lesson02\Lsn02.lib src\lesson03\Lsn03.lib || src\common\common.lib src\lesson01\Lsn01.lib src\lesson02\Lsn02.lib src\lesson03\Lsn03.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = glfw3.lib  src\common\common.lib  src\lesson01\Lsn01.lib  src\lesson02\Lsn02.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = glfw3.lib  src\common\common.lib  src\lesson01\Lsn01.lib  src\lesson02\Lsn02.lib  src\lesson03\Lsn03.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   LINK_PATH = -LIBPATH:E:\VSProject\LearnOpenGL\3rdPart\glfw\lib
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   POST_BUILD = cd .
@@ -119,7 +119,7 @@ build cmake_object_order_depends_target_common: phony || src\common\CMakeFiles\c
 
 build src\common\CMakeFiles\common.dir\MyEBO.cpp.obj: CXX_COMPILER__common_Debug ..\..\..\src\common\MyEBO.cpp || cmake_object_order_depends_target_common
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = src\common\CMakeFiles\common.dir
   OBJECT_FILE_DIR = src\common\CMakeFiles\common.dir
   TARGET_COMPILE_PDB = src\common\CMakeFiles\common.dir\common.pdb
@@ -127,7 +127,7 @@ build src\common\CMakeFiles\common.dir\MyEBO.cpp.obj: CXX_COMPILER__common_Debug
 
 build src\common\CMakeFiles\common.dir\MyProgram.cpp.obj: CXX_COMPILER__common_Debug ..\..\..\src\common\MyProgram.cpp || cmake_object_order_depends_target_common
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = src\common\CMakeFiles\common.dir
   OBJECT_FILE_DIR = src\common\CMakeFiles\common.dir
   TARGET_COMPILE_PDB = src\common\CMakeFiles\common.dir\common.pdb
@@ -135,7 +135,15 @@ build src\common\CMakeFiles\common.dir\MyProgram.cpp.obj: CXX_COMPILER__common_D
 
 build src\common\CMakeFiles\common.dir\MyShader.cpp.obj: CXX_COMPILER__common_Debug ..\..\..\src\common\MyShader.cpp || cmake_object_order_depends_target_common
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
+  OBJECT_DIR = src\common\CMakeFiles\common.dir
+  OBJECT_FILE_DIR = src\common\CMakeFiles\common.dir
+  TARGET_COMPILE_PDB = src\common\CMakeFiles\common.dir\common.pdb
+  TARGET_PDB = src\common\common.pdb
+
+build src\common\CMakeFiles\common.dir\MyTexture.cpp.obj: CXX_COMPILER__common_Debug ..\..\..\src\common\MyTexture.cpp || cmake_object_order_depends_target_common
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = src\common\CMakeFiles\common.dir
   OBJECT_FILE_DIR = src\common\CMakeFiles\common.dir
   TARGET_COMPILE_PDB = src\common\CMakeFiles\common.dir\common.pdb
@@ -143,7 +151,7 @@ build src\common\CMakeFiles\common.dir\MyShader.cpp.obj: CXX_COMPILER__common_De
 
 build src\common\CMakeFiles\common.dir\MyVAO.cpp.obj: CXX_COMPILER__common_Debug ..\..\..\src\common\MyVAO.cpp || cmake_object_order_depends_target_common
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = src\common\CMakeFiles\common.dir
   OBJECT_FILE_DIR = src\common\CMakeFiles\common.dir
   TARGET_COMPILE_PDB = src\common\CMakeFiles\common.dir\common.pdb
@@ -157,7 +165,7 @@ build src\common\CMakeFiles\common.dir\MyVAO.cpp.obj: CXX_COMPILER__common_Debug
 #############################################
 # Link the static library src\common\common.lib
 
-build src\common\common.lib: CXX_STATIC_LIBRARY_LINKER__common_Debug src\common\CMakeFiles\common.dir\MyEBO.cpp.obj src\common\CMakeFiles\common.dir\MyProgram.cpp.obj src\common\CMakeFiles\common.dir\MyShader.cpp.obj src\common\CMakeFiles\common.dir\MyVAO.cpp.obj
+build src\common\common.lib: CXX_STATIC_LIBRARY_LINKER__common_Debug src\common\CMakeFiles\common.dir\MyEBO.cpp.obj src\common\CMakeFiles\common.dir\MyProgram.cpp.obj src\common\CMakeFiles\common.dir\MyShader.cpp.obj src\common\CMakeFiles\common.dir\MyTexture.cpp.obj src\common\CMakeFiles\common.dir\MyVAO.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = src\common\CMakeFiles\common.dir
@@ -218,7 +226,7 @@ build cmake_object_order_depends_target_Lsn01: phony || src\lesson01\CMakeFiles\
 
 build src\lesson01\CMakeFiles\Lsn01.dir\CreateWindow.cpp.obj: CXX_COMPILER__Lsn01_Debug ..\..\..\src\lesson01\CreateWindow.cpp || cmake_object_order_depends_target_Lsn01
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = src\lesson01\CMakeFiles\Lsn01.dir
   OBJECT_FILE_DIR = src\lesson01\CMakeFiles\Lsn01.dir
   TARGET_COMPILE_PDB = src\lesson01\CMakeFiles\Lsn01.dir\Lsn01.pdb
@@ -269,7 +277,7 @@ build cmake_object_order_depends_target_Lsn02: phony || src\lesson02\CMakeFiles\
 
 build src\lesson02\CMakeFiles\Lsn02.dir\DrawShape.cpp.obj: CXX_COMPILER__Lsn02_Debug ..\..\..\src\lesson02\DrawShape.cpp || cmake_object_order_depends_target_Lsn02
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
   OBJECT_DIR = src\lesson02\CMakeFiles\Lsn02.dir
   OBJECT_FILE_DIR = src\lesson02\CMakeFiles\Lsn02.dir
   TARGET_COMPILE_PDB = src\lesson02\CMakeFiles\Lsn02.dir\Lsn02.pdb
@@ -317,6 +325,69 @@ build src\lesson02\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 build src\lesson02\rebuild_cache: phony src\lesson02\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# E:/VSProject/LearnOpenGL/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Lsn03
+
+
+#############################################
+# Order-only phony target for Lsn03
+
+build cmake_object_order_depends_target_Lsn03: phony || src\lesson03\CMakeFiles\Lsn03.dir
+
+build src\lesson03\CMakeFiles\Lsn03.dir\DrawTexture.cpp.obj: CXX_COMPILER__Lsn03_Debug ..\..\..\src\lesson03\DrawTexture.cpp || cmake_object_order_depends_target_Lsn03
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\3rdPart\glad\include -I..\..\..\3rdPart\glfw\include -I..\..\..\3rdPart\image
+  OBJECT_DIR = src\lesson03\CMakeFiles\Lsn03.dir
+  OBJECT_FILE_DIR = src\lesson03\CMakeFiles\Lsn03.dir
+  TARGET_COMPILE_PDB = src\lesson03\CMakeFiles\Lsn03.dir\Lsn03.pdb
+  TARGET_PDB = src\lesson03\Lsn03.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Lsn03
+
+
+#############################################
+# Link the static library src\lesson03\Lsn03.lib
+
+build src\lesson03\Lsn03.lib: CXX_STATIC_LIBRARY_LINKER__Lsn03_Debug src\lesson03\CMakeFiles\Lsn03.dir\DrawTexture.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = src\lesson03\CMakeFiles\Lsn03.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\lesson03\CMakeFiles\Lsn03.dir\Lsn03.pdb
+  TARGET_FILE = src\lesson03\Lsn03.lib
+  TARGET_PDB = src\lesson03\Lsn03.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src\lesson03\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson03" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\lesson03\edit_cache: phony src\lesson03\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\lesson03\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson03" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\lesson03\rebuild_cache: phony src\lesson03\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build LearnOpenGL: phony LearnOpenGL.exe
@@ -328,6 +399,10 @@ build Lsn01.lib: phony src\lesson01\Lsn01.lib
 build Lsn02: phony src\lesson02\Lsn02.lib
 
 build Lsn02.lib: phony src\lesson02\Lsn02.lib
+
+build Lsn03: phony src\lesson03\Lsn03.lib
+
+build Lsn03.lib: phony src\lesson03\Lsn03.lib
 
 build common: phony src\common\common.lib
 
@@ -341,7 +416,7 @@ build common.lib: phony src\common\common.lib
 #############################################
 # Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)
 
-build all: phony LearnOpenGL.exe src\common\all src\lesson01\all src\lesson02\all
+build all: phony LearnOpenGL.exe src\common\all src\lesson01\all src\lesson02\all src\lesson03\all
 
 # =============================================================================
 
@@ -365,20 +440,27 @@ build src\lesson01\all: phony src\lesson01\Lsn01.lib
 build src\lesson02\all: phony src\lesson02\Lsn02.lib
 
 # =============================================================================
+
+#############################################
+# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson03
+
+build src\lesson03\all: phony src\lesson03\Lsn03.lib
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt ..\..\..\src\lesson03\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt ..\..\..\src\lesson03\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake: phony
 
 
 #############################################

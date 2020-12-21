@@ -30,19 +30,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 22,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 14,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 28,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -55,6 +55,12 @@
 				"command" : 3,
 				"file" : 0,
 				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -77,6 +83,10 @@
 				{
 					"backtrace" : 5,
 					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "E:/VSProject/LearnOpenGL/3rdPart/image"
 				}
 			],
 			"language" : "CXX",
@@ -101,6 +111,10 @@
 				{
 					"backtrace" : 5,
 					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "E:/VSProject/LearnOpenGL/3rdPart/image"
 				}
 			],
 			"language" : "C",
@@ -114,6 +128,10 @@
 	[
 		{
 			"backtrace" : 3,
+			"id" : "common::@af79f3804eddddbfa7f1"
+		},
+		{
+			"backtrace" : 3,
 			"id" : "Lsn01::@5a5c941d34fca390e744"
 		},
 		{
@@ -122,7 +140,7 @@
 		},
 		{
 			"backtrace" : 3,
-			"id" : "common::@af79f3804eddddbfa7f1"
+			"id" : "Lsn03::@69bab3db212d1ddd3ec5"
 		}
 	],
 	"id" : "LearnOpenGL::@6890427a1f51a3e7e1df",
@@ -161,6 +179,11 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "src\\lesson02\\Lsn02.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "src\\lesson03\\Lsn03.lib",
 				"role" : "libraries"
 			},
 			{

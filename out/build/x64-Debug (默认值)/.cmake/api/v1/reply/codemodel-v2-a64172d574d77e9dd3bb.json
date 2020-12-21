@@ -10,7 +10,8 @@
 					[
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -34,7 +35,7 @@
 					"source" : "src/common",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				},
 				{
@@ -64,6 +65,20 @@
 					[
 						2
 					]
+				},
+				{
+					"build" : "src/lesson03",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/lesson03",
+					"targetIndexes" : 
+					[
+						3
+					]
 				}
 			],
 			"name" : "Debug",
@@ -75,7 +90,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "LearnOpenGL",
 					"targetIndexes" : 
@@ -83,7 +99,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -92,28 +109,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "LearnOpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LearnOpenGL-Debug-f03faee8bf9f7e2a829a.json",
+					"jsonFile" : "target-LearnOpenGL-Debug-cb51ac3fca5e6056fd7b.json",
 					"name" : "LearnOpenGL",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Lsn01::@5a5c941d34fca390e744",
-					"jsonFile" : "target-Lsn01-Debug-d0f2095d0e9cb9dfc427.json",
+					"jsonFile" : "target-Lsn01-Debug-2a914ec77658efa13c00.json",
 					"name" : "Lsn01",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "Lsn02::@a2771794487e010ccca1",
-					"jsonFile" : "target-Lsn02-Debug-f83feb2bfc4674774490.json",
+					"jsonFile" : "target-Lsn02-Debug-45f0074250c08a5d5a60.json",
 					"name" : "Lsn02",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "Lsn03::@69bab3db212d1ddd3ec5",
+					"jsonFile" : "target-Lsn03-Debug-8cbd282ea011ddd32409.json",
+					"name" : "Lsn03",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "common::@af79f3804eddddbfa7f1",
-					"jsonFile" : "target-common-Debug-63e0296272d27f133c8c.json",
+					"jsonFile" : "target-common-Debug-77be38bd47a030ced768.json",
 					"name" : "common",
 					"projectIndex" : 0
 				}

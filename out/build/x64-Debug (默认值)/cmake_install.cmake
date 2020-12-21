@@ -37,6 +37,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/common/cmake_install.cmake")
   include("E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson01/cmake_install.cmake")
   include("E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson02/cmake_install.cmake")
+  include("E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson03/cmake_install.cmake")
 
 endif()
 

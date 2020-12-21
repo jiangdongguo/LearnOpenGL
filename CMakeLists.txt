@@ -8,6 +8,7 @@ project ("LearnOpenGL")
 include_directories(${PROJECT_SOURCE_DIR}/3rdPart/glad/include/)
 include_directories(${PROJECT_SOURCE_DIR}/3rdPart/glad/include/)
 include_directories(${PROJECT_SOURCE_DIR}/3rdPart/glfw/include/)
+include_directories(${PROJECT_SOURCE_DIR}/3rdPart/image/)
 
 # 指定库位置
 set(GLFW_LINK ${PROJECT_SOURCE_DIR}/3rdPart/glfw/lib)
@@ -17,6 +18,7 @@ link_directories(${GLFW_LINK})
 add_subdirectory(src/common)
 add_subdirectory(src/lesson01)
 add_subdirectory(src/lesson02)
+add_subdirectory(src/lesson03)
 
 # 编译源码生成目标
 add_executable (LearnOpenGL         # 要生成的可执行文件
@@ -29,7 +31,8 @@ target_link_libraries(LearnOpenGL
 						glfw3  # 链接第三方库
 						common # 导入自定义库
 						Lsn01  
-						Lsn02  
+						Lsn02
+						Lsn03
 						)
 
 

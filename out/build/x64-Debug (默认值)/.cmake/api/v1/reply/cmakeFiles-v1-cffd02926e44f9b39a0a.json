@@ -128,6 +128,9 @@
 		},
 		{
 			"path" : "src/lesson02/CMakeLists.txt"
+		},
+		{
+			"path" : "src/lesson03/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

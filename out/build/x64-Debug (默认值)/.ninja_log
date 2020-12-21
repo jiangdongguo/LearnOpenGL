@@ -41,3 +41,6 @@
 939	1090	630234450	src/lesson02/Lsn02.lib	7ee9448cc2a9325b
 985	1127	630234450	src/common/common.lib	98f8357b6bad4f7e
 1128	1646	630234450	LearnOpenGL.exe	5cbac18859245009
+2	391	630518326	src/lesson03/CMakeFiles/Lsn03.dir/DrawTexture.cpp.obj	67a057208a5c8fc5
+391	750	630518327	src/lesson03/Lsn03.lib	e4a45de44f0b307
+750	1416	630518327	LearnOpenGL.exe	e6a8de9e9295d075

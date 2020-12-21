@@ -49,7 +49,7 @@ DrawShape::DrawShape()
 	// 3. 创建VBO、VAO、EBO
 	// 并链接顶点属性，此处绘制正方形
 	mVAO = new MyVAO();
-	mVAO->addVertext3D(mVertices2,sizeof(mVertices2), 0, indices, sizeof(indices));
+	mVAO->addVertext3D(mVertices2,sizeof(mVertices2), indices, sizeof(indices));
 	// 注意：如果调用的是drawTriangle,即绘制三角形
 	// 这里应该这么调用
 	// mVAO->addVertext3D(mVertices1,sizeof(mVertices1), 0, NULL, 0);
@@ -60,7 +60,7 @@ void DrawShape::drawTriangle()
 	// 4. 使用程序
 	mProgram->UseProgram();
 	// 5. 绑定VAO
-	mVAO->BindVAO();
+	mVAO->bindVAO();
 	// 6. 绘制三角形
 	mProgram->drawArrays(GL_TRIANGLES, 0, 3);
 }
@@ -70,7 +70,7 @@ void DrawShape::drawSquare()
 	// 4. 使用程序
 	mProgram->UseProgram();
 	// 5. 绑定EBO
-	mVAO->BindVAO();
+	mVAO->bindVAO();
 	// 6. 绘制正方形
 	mProgram->drawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }

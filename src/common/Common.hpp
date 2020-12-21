@@ -4,6 +4,7 @@
 #include <vector>
 #include "glad/glad.h"   
 #include "GLFW/glfw3.h"
+#include "stb_image.h"
 
 enum class ShaderType
 {
@@ -38,6 +39,19 @@ private:
 	GLuint mShaderProgramId = NULL;
 };
 
+class MyTexture 
+{
+public:
+	MyTexture();
+	~MyTexture();
+
+	int loadImageData(unsigned char* data, int imageWidth, int imageHeight);
+	int bindTexture();
+
+private:
+	GLuint mTextureId = NULL;
+};
+
 class MyEBO
 {
 public:
@@ -59,10 +73,15 @@ public:
 	 
 	// 添加坐标数据
 	// data 3D坐标数据
-	int addVertext3D(float data[], int dataSize, int layout, unsigned int indices[], int indicesSize);
+	int addVertext3D(float data[], int dataSize, unsigned int indices[], int indicesSize);
+
+	void setVertexAttribPointer(GLuint layout, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void* pointer);
 
 	// 绑定VAO
-	int BindVAO();
+	int bindVAO();
+
+	// 解绑VAO
+	int unBindVAO();
 
 private:
 	MyEBO* mEBO = NULL;
