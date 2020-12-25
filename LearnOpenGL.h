@@ -6,6 +6,7 @@
 #include <iostream>
 #include "src/lesson01/CreateWindow.hpp"
 #include "src/lesson02/DrawShape.hpp"
+#include "src/lesson03/DrawTexture.hpp"
 
 
 int main();

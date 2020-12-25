@@ -7,19 +7,22 @@ using namespace std;
 
 int main()
 {
-	CreateWindow* mCreateWindow = new CreateWindow();
+	CreateWindow* mLsn01 = new CreateWindow();
 	DrawShape* mLsn02 = new DrawShape();
+	DrawTexture* mLsn03 = new DrawTexture();
 
-	while (! mCreateWindow->isWindowShouldClose()) {
-		mCreateWindow->checkCancelWindowEvent();
-		mCreateWindow->clearWindow();
+	while (!mLsn01->isWindowShouldClose()) {
+		mLsn01->checkCancelWindowEvent();
+		mLsn01->clearWindow();
 
 		// 绘制三角形
 	    // mLsn02->drawTriangle();
 		// 绘制正方形
-	     mLsn02->drawSquare();
+	    // mLsn02->drawSquare();
+		// 绘制纹理
+		mLsn03->drawTexture();
 
-		mCreateWindow->swapBuffers();
+		 mLsn01->swapBuffers();
 	}
 
 	delete mLsn02;

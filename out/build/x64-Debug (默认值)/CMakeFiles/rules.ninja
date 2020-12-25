@@ -22,7 +22,7 @@ msvc_deps_prefix = 注意: 包含文件:
 
 rule C_COMPILER__LearnOpenGL_Debug
   deps = msvc
-  command = C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe"  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building C object $out
 
 
@@ -31,7 +31,7 @@ rule C_COMPILER__LearnOpenGL_Debug
 
 rule CXX_COMPILER__LearnOpenGL_Debug
   deps = msvc
-  command = C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe"  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -39,7 +39,7 @@ rule CXX_COMPILER__LearnOpenGL_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug
-  command = cmd.exe /C "$PRE_LINK && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc="D:\Windows Kits\10\bin\10.0.18362.0\x64\rc.exe" --mt="D:\Windows Kits\10\bin\10.0.18362.0\x64\mt.exe" --manifests $MANIFESTS -- "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\link.exe" /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -57,7 +57,7 @@ rule CUSTOM_COMMAND
 
 rule CXX_COMPILER__common_Debug
   deps = msvc
-  command = C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe"  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -65,7 +65,7 @@ rule CXX_COMPILER__common_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__common_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\lib.exe" /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -75,7 +75,7 @@ rule CXX_STATIC_LIBRARY_LINKER__common_Debug
 
 rule CXX_COMPILER__Lsn01_Debug
   deps = msvc
-  command = C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe"  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -83,7 +83,7 @@ rule CXX_COMPILER__Lsn01_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__Lsn01_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\lib.exe" /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -93,7 +93,7 @@ rule CXX_STATIC_LIBRARY_LINKER__Lsn01_Debug
 
 rule CXX_COMPILER__Lsn02_Debug
   deps = msvc
-  command = C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe"  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -101,7 +101,7 @@ rule CXX_COMPILER__Lsn02_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__Lsn02_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\lib.exe" /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -111,7 +111,7 @@ rule CXX_STATIC_LIBRARY_LINKER__Lsn02_Debug
 
 rule CXX_COMPILER__Lsn03_Debug
   deps = msvc
-  command = C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\cl.exe"  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
@@ -119,7 +119,7 @@ rule CXX_COMPILER__Lsn03_Debug
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__Lsn03_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1428~1.293\bin\Hostx64\x64\lib.exe /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x64\lib.exe" /nologo $LINK_FLAGS /out:$TARGET_FILE $in  && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -128,7 +128,7 @@ rule CXX_STATIC_LIBRARY_LINKER__Lsn03_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)"
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Developer\VSProject\LearnOpenGL -B"D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)"
   description = Re-running CMake...
   generator = 1
 
@@ -137,7 +137,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" $FILE_ARG -t clean $TARGETS
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -145,6 +145,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" -t targets
+  command = "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja\ninja.exe" -t targets
   description = All primary targets available:
 

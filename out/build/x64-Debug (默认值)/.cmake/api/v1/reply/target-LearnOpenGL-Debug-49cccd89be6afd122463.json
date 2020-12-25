@@ -78,15 +78,15 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glad/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glad/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glfw/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/image"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/image"
 				}
 			],
 			"language" : "CXX",
@@ -106,15 +106,15 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glad/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glad/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glfw/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/image"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/image"
 				}
 			],
 			"language" : "C",
@@ -158,7 +158,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LIBPATH:E:\\VSProject\\LearnOpenGL\\3rdPart\\glfw\\lib",
+				"fragment" : "-LIBPATH:D:\\Developer\\VSProject\\LearnOpenGL\\3rdPart\\glfw\\lib",
 				"role" : "libraryPath"
 			},
 			{

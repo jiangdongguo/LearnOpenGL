@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/lesson02/Lsn02.lib"
+			"path" : "src/lesson01/Lsn01.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 		],
 		"files" : 
 		[
-			"src/lesson02/CMakeLists.txt",
+			"src/lesson01/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -75,15 +75,15 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glad/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glfw/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/image"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/image"
 				}
 			],
 			"language" : "CXX",
@@ -93,13 +93,13 @@
 			]
 		}
 	],
-	"id" : "Lsn02::@a2771794487e010ccca1",
-	"name" : "Lsn02",
-	"nameOnDisk" : "Lsn02.lib",
+	"id" : "Lsn01::@5a5c941d34fca390e744",
+	"name" : "Lsn01",
+	"nameOnDisk" : "Lsn01.lib",
 	"paths" : 
 	{
-		"build" : "src/lesson02",
-		"source" : "src/lesson02"
+		"build" : "src/lesson01",
+		"source" : "src/lesson01"
 	},
 	"sourceGroups" : 
 	[
@@ -116,7 +116,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/lesson02/DrawShape.cpp",
+			"path" : "src/lesson01/CreateWindow.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

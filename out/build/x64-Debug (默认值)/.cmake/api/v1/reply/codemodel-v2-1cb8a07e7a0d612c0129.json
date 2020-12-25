@@ -109,35 +109,35 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "LearnOpenGL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LearnOpenGL-Debug-cb51ac3fca5e6056fd7b.json",
+					"jsonFile" : "target-LearnOpenGL-Debug-49cccd89be6afd122463.json",
 					"name" : "LearnOpenGL",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Lsn01::@5a5c941d34fca390e744",
-					"jsonFile" : "target-Lsn01-Debug-2a914ec77658efa13c00.json",
+					"jsonFile" : "target-Lsn01-Debug-770b9e89468ab09764a6.json",
 					"name" : "Lsn01",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "Lsn02::@a2771794487e010ccca1",
-					"jsonFile" : "target-Lsn02-Debug-45f0074250c08a5d5a60.json",
+					"jsonFile" : "target-Lsn02-Debug-34245147f56be8a12d4e.json",
 					"name" : "Lsn02",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "Lsn03::@69bab3db212d1ddd3ec5",
-					"jsonFile" : "target-Lsn03-Debug-8cbd282ea011ddd32409.json",
+					"jsonFile" : "target-Lsn03-Debug-690acb1bdf01baf61a34.json",
 					"name" : "Lsn03",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "common::@af79f3804eddddbfa7f1",
-					"jsonFile" : "target-common-Debug-77be38bd47a030ced768.json",
+					"jsonFile" : "target-common-Debug-78237eaae3c77f138aa6.json",
 					"name" : "common",
 					"projectIndex" : 0
 				}
@@ -147,8 +147,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)",
-		"source" : "E:/VSProject/LearnOpenGL"
+		"build" : "D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)",
+		"source" : "D:/Developer/VSProject/LearnOpenGL"
 	},
 	"version" : 
 	{

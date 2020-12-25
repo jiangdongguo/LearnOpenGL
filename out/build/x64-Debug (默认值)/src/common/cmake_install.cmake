@@ -1,8 +1,8 @@
-# Install script for directory: E:/VSProject/LearnOpenGL/src/common
+# Install script for directory: D:/Developer/VSProject/LearnOpenGL/src/common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "E:/VSProject/LearnOpenGL/out/install/x64-Debug (默认值)")
+  set(CMAKE_INSTALL_PREFIX "D:/Developer/VSProject/LearnOpenGL/out/install/x64-Debug (默认值)")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

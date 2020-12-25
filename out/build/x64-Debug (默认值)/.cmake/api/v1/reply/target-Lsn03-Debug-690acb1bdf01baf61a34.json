@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/common/common.lib"
+			"path" : "src/lesson03/Lsn03.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 		],
 		"files" : 
 		[
-			"src/common/CMakeLists.txt",
+			"src/lesson03/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -75,35 +75,31 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glad/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/glfw/include"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/glfw/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/VSProject/LearnOpenGL/3rdPart/image"
+					"path" : "D:/Developer/VSProject/LearnOpenGL/3rdPart/image"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2,
-				3,
-				4
+				0
 			]
 		}
 	],
-	"id" : "common::@af79f3804eddddbfa7f1",
-	"name" : "common",
-	"nameOnDisk" : "common.lib",
+	"id" : "Lsn03::@69bab3db212d1ddd3ec5",
+	"name" : "Lsn03",
+	"nameOnDisk" : "Lsn03.lib",
 	"paths" : 
 	{
-		"build" : "src/common",
-		"source" : "src/common"
+		"build" : "src/lesson03",
+		"source" : "src/lesson03"
 	},
 	"sourceGroups" : 
 	[
@@ -111,11 +107,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1,
-				2,
-				3,
-				4
+				0
 			]
 		}
 	],
@@ -124,31 +116,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/common/MyEBO.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/common/MyProgram.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/common/MyShader.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/common/MyTexture.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/common/MyVAO.cpp",
+			"path" : "src/lesson03/DrawTexture.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

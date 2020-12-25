@@ -46,13 +46,17 @@ DrawShape::DrawShape()
 
 	// 2. 创建程序对象
 	mProgram = new MyProgram(vertexShader.getShaderId(), fragmentShader.getShaderId());
-	// 3. 创建VBO、VAO、EBO
-	// 并链接顶点属性，此处绘制正方形
+	// 3. 创建VBO、VAO、EBO，链接顶点属性
+	// 3.1 创建VBO、VAO、EBO对象
 	mVAO = new MyVAO();
 	mVAO->addVertext3D(mVertices2,sizeof(mVertices2), indices, sizeof(indices));
 	// 注意：如果调用的是drawTriangle,即绘制三角形
 	// 这里应该这么调用
 	// mVAO->addVertext3D(mVertices1,sizeof(mVertices1), 0, NULL, 0);
+
+	// 3.2 链接顶点属性(位置属性)，解绑VAO
+	mVAO->setVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+	mVAO->unBindVAO();
 }
 
 void DrawShape::drawTriangle()

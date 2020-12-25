@@ -71,7 +71,7 @@ build LearnOpenGL.exe: CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug CMakeFiles\Learn
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = glfw3.lib  src\common\common.lib  src\lesson01\Lsn01.lib  src\lesson02\Lsn02.lib  src\lesson03\Lsn03.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  LINK_PATH = -LIBPATH:E:\VSProject\LearnOpenGL\3rdPart\glfw\lib
+  LINK_PATH = -LIBPATH:D:\Developer\VSProject\LearnOpenGL\3rdPart\glfw\lib
   OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -85,7 +85,7 @@ build LearnOpenGL.exe: CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug CMakeFiles\Learn
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -96,7 +96,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Developer\VSProject\LearnOpenGL -B"D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -105,7 +105,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/VSProject/LearnOpenGL/CMakeLists.txt
+# D:/Developer/VSProject/LearnOpenGL/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -180,7 +180,7 @@ build src\common\common.lib: CXX_STATIC_LIBRARY_LINKER__common_Debug src\common\
 # Utility command for edit_cache
 
 build src\common\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\common" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\common" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -191,7 +191,7 @@ build src\common\edit_cache: phony src\common\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build src\common\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\common" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\common" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Developer\VSProject\LearnOpenGL -B"D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -200,7 +200,7 @@ build src\common\rebuild_cache: phony src\common\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/VSProject/LearnOpenGL/CMakeLists.txt
+# D:/Developer/VSProject/LearnOpenGL/CMakeLists.txt
 # =============================================================================
 
 
@@ -208,7 +208,7 @@ build src\common\rebuild_cache: phony src\common\CMakeFiles\rebuild_cache.util
 # Utility command for rebuild_cache
 
 build src\lesson01\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson01" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson01" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Developer\VSProject\LearnOpenGL -B"D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -255,7 +255,7 @@ build src\lesson01\Lsn01.lib: CXX_STATIC_LIBRARY_LINKER__Lsn01_Debug src\lesson0
 # Utility command for edit_cache
 
 build src\lesson01\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson01" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson01" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -263,7 +263,7 @@ build src\lesson01\edit_cache: phony src\lesson01\CMakeFiles\edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/VSProject/LearnOpenGL/CMakeLists.txt
+# D:/Developer/VSProject/LearnOpenGL/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -306,7 +306,7 @@ build src\lesson02\Lsn02.lib: CXX_STATIC_LIBRARY_LINKER__Lsn02_Debug src\lesson0
 # Utility command for edit_cache
 
 build src\lesson02\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson02" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson02" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -317,7 +317,7 @@ build src\lesson02\edit_cache: phony src\lesson02\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build src\lesson02\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson02" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson02" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Developer\VSProject\LearnOpenGL -B"D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -326,7 +326,7 @@ build src\lesson02\rebuild_cache: phony src\lesson02\CMakeFiles\rebuild_cache.ut
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/VSProject/LearnOpenGL/CMakeLists.txt
+# D:/Developer/VSProject/LearnOpenGL/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -369,7 +369,7 @@ build src\lesson03\Lsn03.lib: CXX_STATIC_LIBRARY_LINKER__Lsn03_Debug src\lesson0
 # Utility command for edit_cache
 
 build src\lesson03\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson03" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson03" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -380,7 +380,7 @@ build src\lesson03\edit_cache: phony src\lesson03\CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build src\lesson03\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson03" && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SE:\VSProject\LearnOpenGL -B"E:\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
+  COMMAND = cmd.exe /C "cd /D "D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)\src\lesson03" && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\Developer\VSProject\LearnOpenGL -B"D:\Developer\VSProject\LearnOpenGL\out\build\x64-Debug (默认值)""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -414,35 +414,35 @@ build common.lib: phony src\common\common.lib
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)
+# Folder: D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)
 
 build all: phony LearnOpenGL.exe src\common\all src\lesson01\all src\lesson02\all src\lesson03\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/common
+# Folder: D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/common
 
 build src\common\all: phony src\common\common.lib
 
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson01
+# Folder: D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson01
 
 build src\lesson01\all: phony src\lesson01\Lsn01.lib
 
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson02
+# Folder: D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson02
 
 build src\lesson02\all: phony src\lesson02\Lsn02.lib
 
 # =============================================================================
 
 #############################################
-# Folder: E:/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson03
+# Folder: D:/Developer/VSProject/LearnOpenGL/out/build/x64-Debug (默认值)/src/lesson03
 
 build src\lesson03\all: phony src\lesson03\Lsn03.lib
 
@@ -453,14 +453,14 @@ build src\lesson03\all: phony src\lesson03\Lsn03.lib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt ..\..\..\src\lesson03\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt ..\..\..\src\lesson03\CMakeLists.txt CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt ..\..\..\src\lesson03\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\src\common\CMakeLists.txt ..\..\..\src\lesson01\CMakeLists.txt ..\..\..\src\lesson02\CMakeLists.txt ..\..\..\src\lesson03\CMakeLists.txt CMakeCache.txt CMakeFiles\3.18.20081302-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.18.20081302-MSVC_2\CMakeSystem.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake D$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake: phony
 
 
 #############################################

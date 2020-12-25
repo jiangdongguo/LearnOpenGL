@@ -24,6 +24,7 @@ int MyTexture::loadImageData(unsigned char* data, int imageWidth, int imageHeigh
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, imageWidth, imageHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
 	// 5. …˙≥…Œ∆¿Ì
 	glGenerateMipmap(GL_TEXTURE_2D);
+	std::cout << "load image success" << std::endl;
 	return 0;
 }
 
