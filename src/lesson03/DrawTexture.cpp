@@ -87,7 +87,7 @@ DrawTexture::DrawTexture()
 int  DrawTexture::drawTexture()
 {
 	// 4. 使用程序，绑定纹理对象
-	mProgram->UseProgram();
+	mProgram->useProgram();
 	mTexture->bindTexture();
 	// 5. 绑定VAO对象
 	mVAO->bindVAO();

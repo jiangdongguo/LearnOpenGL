@@ -1,4 +1,5 @@
 #include "Common.hpp"
+#include "Common.hpp"
 
 MyProgram::MyProgram(GLuint vertexShaderId, GLuint fragmentShaderId) {
 	int success;
@@ -35,7 +36,12 @@ MyProgram::~MyProgram() {
 	}
 }
 
-int MyProgram::UseProgram()
+GLuint MyProgram::getShaderProgramId()
+{
+	return mShaderProgramId;
+}
+
+int MyProgram::useProgram()
 {
 	// 4. 使用着色器程序
 	glUseProgram(mShaderProgramId);

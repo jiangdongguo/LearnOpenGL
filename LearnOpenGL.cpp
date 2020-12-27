@@ -19,8 +19,9 @@ int main()
 	    // mLsn02->drawTriangle();
 		// 绘制正方形
 	    // mLsn02->drawSquare();
+		mLsn02->drawSquareOfUniform();
 		// 绘制纹理
-		mLsn03->drawTexture();
+		//mLsn03->drawTexture();
 
 		 mLsn01->swapBuffers();
 	}

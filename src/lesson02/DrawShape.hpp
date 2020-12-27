@@ -12,6 +12,7 @@ public:
 
 	// 绘制正方形
 	void drawSquare();
+	void drawSquareOfUniform();
 
 private:
 	MyProgram* mProgram = NULL;

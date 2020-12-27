@@ -1,4 +1,5 @@
 #include "DrawShape.hpp"
+#include "DrawShape.hpp"
 
 // 顶点着色器源码
 const char* mVertexShaderStr = "#version 330 core\n"
@@ -9,6 +10,7 @@ const char* mVertexShaderStr = "#version 330 core\n"
 "	outPos = aPos;"
 "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
 "}\0";
+
 // 片段着色器源码
 const char* mFragmentShaderStr = "#version 330 core\n"
 "out vec4 rgbColor;\n"
@@ -16,6 +18,17 @@ const char* mFragmentShaderStr = "#version 330 core\n"
 "void main()\n"
 "{\n"
 "   rgbColor = vec4(outPos, 1.0f);\n"
+"}\n\0";
+
+// 片段着色器源码
+//		使用Uniform声明的变量（全局）作为颜色值
+//      这个变量的值将在任意着色器中被设定，而无需通过顶点着色器作为中介
+const char* mFragmentShaderStrOfUniform = "#version 330 core\n"
+"out vec4 rgbColor;\n"
+"uniform vec4 ourColor;\n"
+"void main()\n"
+"{\n"
+"   rgbColor = ourColor;\n"
 "}\n\0";
 
 // 顶点数据
@@ -52,7 +65,7 @@ DrawShape::DrawShape()
 	mVAO->addVertext3D(mVertices2,sizeof(mVertices2), indices, sizeof(indices));
 	// 注意：如果调用的是drawTriangle,即绘制三角形
 	// 这里应该这么调用
-	// mVAO->addVertext3D(mVertices1,sizeof(mVertices1), 0, NULL, 0);
+	// mVAO->addVertext3D(mVertices1,sizeof(mVertices1), NULL, 0);
 
 	// 3.2 链接顶点属性(位置属性)，解绑VAO
 	mVAO->setVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
@@ -62,7 +75,7 @@ DrawShape::DrawShape()
 void DrawShape::drawTriangle()
 {	
 	// 4. 使用程序
-	mProgram->UseProgram();
+	mProgram->useProgram();
 	// 5. 绑定VAO
 	mVAO->bindVAO();
 	// 6. 绘制三角形
@@ -72,10 +85,28 @@ void DrawShape::drawTriangle()
 void DrawShape::drawSquare()
 {
 	// 4. 使用程序
-	mProgram->UseProgram();
-	// 5. 绑定EBO
+	mProgram->useProgram();
+	// 5. 绑定VAO
 	mVAO->bindVAO();
 	// 6. 绘制正方形
+	mProgram->drawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+}
+
+void DrawShape::drawSquareOfUniform()
+{
+	// 注意：如果调用drawSquareOfUniform绘制正方形
+	// 需要将mFragmentShaderStr替换为mFragmentShaderStrOfUniform才能使其生效
+
+	// 4. 使用程序
+	mProgram->useProgram();
+	// 5. 设置uniform变量ourColor值
+	float timeValue = glfwGetTime();
+	float redValue = sin(timeValue) / 2.0f + 0.5f;
+	int vertexColorLocation = glGetUniformLocation(mProgram->getShaderProgramId(), "ourColor");
+	glUniform4f(vertexColorLocation, redValue, 0.0f, 0.0f, 1.0f);
+
+	// 6. 绑定VAO，绘制正方形
+	mVAO->bindVAO();
 	mProgram->drawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 }
 

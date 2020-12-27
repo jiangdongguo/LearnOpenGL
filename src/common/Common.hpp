@@ -5,9 +5,6 @@
 #include "glad/glad.h"   
 #include "GLFW/glfw3.h"
 
-
-
-
 enum class ShaderType
 {
 	TYPE_VERTEX_SHADER = 1,
@@ -33,7 +30,8 @@ public:
 	MyProgram(GLuint vertexShaderId, GLuint fragmentShaderId);
 	~MyProgram();
 
-	int UseProgram();
+	GLuint getShaderProgramId();
+	int useProgram();
 	int drawArrays(GLenum mode, GLint first, GLsizei count);
 	int drawElements(GLenum mode, GLsizei count, GLenum type, const void* indices);
 
